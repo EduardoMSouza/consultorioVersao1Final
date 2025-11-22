@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="41b40220-be18-4986-82c7-d58ec893ca5b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/consultorio/api/controller/PlanoDentalController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/consultorio/api/dto/mapper/EvolucaoTratamentoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/consultorio/api/dto/mapper/PacienteMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/consultorio/api/dto/mapper/PlanoDentalMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/consultorio/api/dto/request/EvolucaoTratamentoRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/consultorio/api/dto/request/PacienteRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/consultorio/api/dto/request/PlanoDentalRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/consultorio/api/dto/response/EvolucaoTratamentoResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/consultorio/api/dto/response/PacienteResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/consultorio/api/dto/response/PacienteResumoResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/consultorio/api/dto/response/PlanoDentalResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/consultorio/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/entity/PlanoDental.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/exception/EntidadeNaoEncontradaException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/exception/PacienteNaoEncontradoException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/exception/ValidacaoException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/repository/PlanoDentalRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/repository/projection/PacienteResumoProjection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/service/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/service/AuthenticationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/service/PlanoDentalService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/dashboard/agenda/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/dashboard/configuracoes/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/dashboard/dentistas/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/dashboard/layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/dashboard/pacientes/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/dashboard/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/login/layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/login/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/app-sidebar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/app-topbar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/authService.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/loginService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/ConsultorioApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/config/CorsConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/config/OpenApiConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/agenda/Agenda.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/agenda/AgendaController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/agenda/AgendaConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/agenda/AgendaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/agenda/AgendaService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/agenda/dto/AgendaCreateDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/agenda/dto/AgendaListDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/agenda/dto/AgendaRequestDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/agenda/dto/AgendaResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/agenda/dto/AgendaStatusUpdateDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/agenda/dto/AgendaUpdateDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/agenda/dto/DisponibilidadeRequestDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/agenda/dto/ProximoHorarioResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/agenda/exception/AgendaNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/agenda/exception/ConflitoAgendamentoException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/dentista/Dentista.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/dentista/DentistaController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/dentista/DentistaConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/dentista/DentistaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/dentista/DentistaService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/dentista/dto/DentistaCreateDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/dentista/dto/DentistaListDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/dentista/dto/DentistaRequestDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/dentista/dto/DentistaResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/dentista/dto/DentistaUpdateDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/dentista/exception/DentistaDuplicadoException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/dentista/exception/DentistaNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/ficha_medica/FichaMedica.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/ficha_medica/FichaMedicaController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/ficha_medica/FichaMedicaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/ficha_medica/FichaMedicaService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/ficha_medica/dto/FichaMedicaMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/ficha_medica/dto/FichaMedicaRequestDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/ficha_medica/dto/FichaMedicaResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/DTOs/AnamneseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/DTOs/ConsultaResumoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/DTOs/ContatoEmergenciaDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/DTOs/EnderecoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/DTOs/ExameClinicoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/DTOs/PacienteCreateDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/DTOs/PacienteHistoricoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/DTOs/PacienteListDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/DTOs/PacienteRequestDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/DTOs/PacienteResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/DTOs/PacienteUpdateDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/DTOs/PlanoTratamentoCreateComEnumDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/DTOs/PlanoTratamentoCreateDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/DTOs/PlanoTratamentoListDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/DTOs/PlanoTratamentoPacienteDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/DTOs/PlanoTratamentoResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/DTOs/PlanoTratamentoResumoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/DTOs/PlanoTratamentoUpdateDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/DTOs/ResponsavelDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/DTOs/StatusPlanoTratamentoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/DTOs/StatusUpdateDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/Enums/Dente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/Enums/EstadoCivil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/Enums/Sexo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/Enums/StatusPaciente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/Enums/StatusPlanoTratamento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/PacienteRequestDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/PacienteResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/controller/PacienteController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/controller/PlanoTratamentoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/converter/PacienteConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/converter/PlanoTratamentoConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/entity/Anamnese.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/entity/Paciente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/entity/PlanoTratamento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/erro/PacienteNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/repository/PacienteRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/repository/PlanoTratamentoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/service/PacienteService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/service/PlanoTratamentoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/paciente/usarApiPaciente" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/profissional/Profissional.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/profissional/ProfissionalController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/profissional/ProfissionalRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/profissional/ProfissionalRequestDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/profissional/ProfissionalResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/profissional/ProfissionalService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/prontuario_odontologico/ProntuarioController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/prontuario_odontologico/ProntuarioOdontologico.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/prontuario_odontologico/ProntuarioRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/prontuario_odontologico/ProntuarioService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/prontuario_odontologico/dto/ProntuarioRequestDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/prontuario_odontologico/dto/ProntuarioResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/user/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/user/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/user/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/user/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/user/dto/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/user/dto/UserRequestDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/domain/user/dto/UserResponseDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/read.me" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/api/controller/AgendaController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/api/controller/DentistaController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/api/controller/EvolucaoTratamentoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/consultorio/api/controller/EvolucaoTratamentoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/api/controller/PacienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/consultorio/api/controller/PacienteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/api/controller/PlanoTratamentoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/api/mapper/AgendaMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/api/mapper/DentistaMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/api/mapper/EvolucaoTratamentoMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/api/mapper/PacienteMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/api/mapper/PlanoTratamentoMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/api/request/AgendaRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/api/request/DentistaRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/api/request/EvolucaoTratamentoRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/api/request/PlanoTratamentoRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/api/request/paciente/PacienteRequestDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/api/request/paciente/PacienteRequestFull.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/api/request/paciente/PacienteRequestQuick.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/api/response/AgendaResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/api/response/DentistaResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/api/response/EvolucaoTratamentoResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/api/response/PacienteResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/api/response/PlanoTratamentoResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/api/response/ProntuarioCompletoResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/config/OpenApiConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/consultorio/config/OpenApiConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/entity/Agenda.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/entity/Dentista.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/entity/EvolucaoTratamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/entity/EvolucaoTratamento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/entity/Paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/entity/Paciente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/entity/PlanoTratamento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/entity/subentities/Anamnese.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/entity/subentities/Conjuge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/entity/subentities/DadosPessoais.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/entity/subentities/InspecaoBucal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/entity/subentities/Responsavel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/exception/DentistaNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/exception/DentistaNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/exception/PacienteNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/exception/PacienteNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/exception/RecursoNaoEncontradoException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/exception/RecursoNaoEncontradoException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/repository/AgendaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/repository/DentistaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/repository/EvolucaoTratamentoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/repository/EvolucaoTratamentoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/repository/PacienteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/repository/PacienteRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/repository/PlanoTratamentoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/service/AgendaService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/service/DentistaService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/service/EvolucaoTratamentoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/service/EvolucaoTratamentoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/service/PacienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/service/PacienteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/consultorio/domain/service/PlanoTratamentoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/resources/static/css/dashboard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/resources/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/resources/static/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/resources/static/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/resources/static/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/test/java/com/consultorio/ConsultorioApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/agenda/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/dashboard/agenda/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/dashboard/agendamentos/components/AgendaDataTable.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/dashboard/agendamentos/components/AgendaEditDialog.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/dashboard/agendamentos/components/DailyAgenda.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/dashboard/dentista/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/dashboard/dentistas/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/dashboard/paciente/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/dashboard/pacientes/components/PacienteForm.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/dashboard/pacientes/components/PacienteFormDialog.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/dashboard/pacientes/components/ProntuarioDialog.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/dashboard/pacientes/components/data-table.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/dashboard/pacientes/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-odontologica/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/app/agendamentos/components/AgendaCalendar.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/app/agendamentos/components/AgendaDayView.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/app/agendamentos/components/AgendaForm.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/app/agendamentos/components/AgendaFormDialog.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/app/agendamentos/components/AgendaStats.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/app/agendamentos/components/agenda-data-table.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/app/agendamentos/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/app/dentistas/components/DentistaForm.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/app/dentistas/components/DentistaTable.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/app/dentistas/components/DialogDentista.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/app/dentistas/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/app/pacientes/components/FiltrosPacientes.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/app/pacientes/components/PacienteForm.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/app/pacientes/components/PacientesTable.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/app/pacientes/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/app/resumo/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/components/app-sidebar.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/components/chart-area-interactive.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/components/data-table.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/components/nav-documents.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/components/nav-main.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/components/nav-secondary.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/components/nav-user.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/components/section-cards.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/components/site-header.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/components/ui/Sidebar.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/components/ui/Topbar.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/components/ui/radio-group.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/components/ui/scroll-area.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/components/ui/tabs.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/hooks/use-mobile.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/hooks/useAgenda.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/hooks/useDentista.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/hooks/usePaciente.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/lib/api.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/lib/formatadores.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/services/agendaService.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/services/dentistaService.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/services/pacienteService.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/store/useSidebarStore.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/types/agenda.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/types/paciente.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/src/types/planoTratamento.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/clinica-web/tailwind.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/components/ui/dialog.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/components/ui/radio-group.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/components/ui/scroll-area.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/components/ui/textarea.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/hooks/useAgenda.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/middleware.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/.idea/my-app.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/components.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/eslint.config.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/next.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/postcss.config.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/public/file.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/public/globe.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/public/next.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/public/vercel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/public/window.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/src/app/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/src/app/globals.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/src/app/layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/src/app/middleware.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/src/app/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/src/app/pages/AgendamentosPage.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/src/components/Sidebar.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/src/components/Topbar.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/src/components/agendamentos/AgendamentoDetalhes.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/src/components/agendamentos/AgendamentoSemana.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/src/components/agendamentos/AgendamentoStats.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/src/components/agendamentos/AgendamentoTable.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/src/components/agendamentos/AgendamentosPage.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/src/components/agendamentos/agendamentoAPI.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/src/components/agendamentos/helpers.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/src/components/agendamentos/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/src/components/layout/AnimatedLayout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/src/components/providers/theme-provider.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/src/components/ui/Icons.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/src/components/ui/button.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/src/components/ui/card.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/src/components/ui/dialog.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/src/components/ui/input.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/src/components/ui/label.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/src/components/ui/menubar.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/src/components/ui/mode-toggle.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/src/components/ui/select.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/src/components/ui/sonner.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/src/components/ui/textarea.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/src/lib/auth.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/src/lib/utils.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/my-app/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/services/agendaService.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/services/types/paciente.types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/agendamentos/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/components/dashboard/agendamentos/components/agenda-data-table.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/components/dashboard/agendamentos/components/agenda-data-table.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/components/dashboard/agendamentos/components/agenda-data-table.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/components/dashboard/agendamentos/components/paciente-data-table.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/components/dashboard/dashboard.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/components/dashboard/dashboard.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/components/dashboard/dashboard.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/components/paciente-form/paciente-form.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/components/paciente-form/paciente-form.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/components/paciente-form/paciente-form.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/components/paciente-list/paciente-list.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/components/paciente-list/paciente-list.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/components/paciente-list/paciente-list.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/core/interceptors/api.interceptor.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/core/models/paciente.model.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/core/services/agendamento.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/core/services/dentista.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/core/services/paciente.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/dashboard/layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/dashboard/pacientes/components/PacienteFilters.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/dashboard/pacientes/components/PacienteFormDialog.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/dashboard/pacientes/components/ProntuarioDialog.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/dashboard/pacientes/components/data-table.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/dashboard/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/dentistas/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/login/login.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/login/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/models/paciente.model.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/pacientes/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/pages/agendamentos/agendamentos.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/pages/agendamentos/agendamentos.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/pages/agendamentos/agendamentos.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/pages/dashboard/admin/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/pages/dashboard/agenda/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/pages/dashboard/dashboard.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/pages/dashboard/dashboard.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/pages/dashboard/dentista/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/pages/dashboard/paciente/PacienteForm.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/pages/dashboard/paciente/ViewPatientModal.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/pages/dashboard/paciente/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/pages/dashboard/secretaria/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/pages/dentistas/dentistas.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/pages/dentistas/dentistas.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/pages/dentistas/dentistas.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/pages/login/login.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/pages/login/login.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/pages/login/login.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/pages/pacientes/paciente-form.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/pages/pacientes/pacientes.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/pages/pacientes/pacientes.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/pages/pacientes/pacientes.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/services/agendaService.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/services/dentistaService.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/services/pacienteService.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/shared/components/layout/layout.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/shared/components/sidebar/sidebar.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/shared/components/sidebar/sidebar.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/shared/components/sidebar/sidebar.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/shared/components/topbar/topbar.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/shared/components/topbar/topbar.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/shared/components/topbar/topbar.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/app-sidebar.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/app-topbar.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/layout/Sidebar.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/layout/Topbar.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/hooks/usePacientes.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/lib/api.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/lib/auth.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/lib/dto/agendamento.dto.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/lib/dto/login.dto.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/lib/dto/paciente.dto.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/lib/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/lib/utils.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/middleware.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/services/AgendaService.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/services/authService.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/services/cache/pacienteCache.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/services/dentistaService.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/services/pacienteService.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/services/useAuth.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/store/useAgendamentos.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/store/useAuth.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/store/useDentistas.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/store/usePacientes.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/validations/paciente.schema.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/tailwind.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/tailwind.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/types/agenda.ts" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="35odtohG9o7AAeXzvcv6sHU5vxK" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "git-widget-placeholder": "main",
+    "js.debugger.nextJs.config.created.client": "true",
+    "js.debugger.nextJs.config.created.server": "true",
+    "last_opened_file_path": "C:/projetos/ConsultorioOdontologico/clinicaOdontologicaDanilo/front-end/src/app/dashboard/pacientes",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.Next.js: server-side.executor": "Run",
+    "ts.external.directory.path": "C:\\projetos\\ConsultorioOdontologico\\clinicaOdontologicaDanilo\\front-end\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\projetos\ConsultorioOdontologico\clinicaOdontologicaDanilo\front-end\src\app\dashboard\pacientes" />
+      <recent name="C:\projetos\ConsultorioOdontologico\clinicaOdontologicaDanilo\front-end\src\app\dashboard\dentistas" />
+      <recent name="C:\projetos\ConsultorioOdontologico\clinicaOdontologicaDanilo\front-end\src\app\dashboard\configuracoes" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.Next.js: server-side">
+    <configuration name="Next.js: debug client-side" type="JavascriptDebugType" uri="http://localhost:3000/">
+      <method v="2" />
+    </configuration>
+    <configuration name="Next.js: server-side" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-WS-252.26830.93" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="41b40220-be18-4986-82c7-d58ec893ca5b" name="Changes" comment="" />
+      <created>1763780577383</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1763780577383</updated>
+      <workItem from="1763780579226" duration="2862000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
